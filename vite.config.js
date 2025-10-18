@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/waypoint-site/',   // repo name
-  //base: '/',   // custom domain
-  build: { outDir: 'docs' }  // GitHub Pages can serve /docs
+  base: '/waypoint-site/',   // must match repo name exactly (case-sensitive)
+  build: { outDir: 'docs' }  // GitHub Pages serves /docs on main
 })
+
