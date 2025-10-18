@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Brand tokens */
+:root{
+  --brand-primary:#0B5DAA;
+  --brand-secondary:#135FB8;
+  --brand-gray:#7A7A7A;
+}
+.brand-text{color:var(--brand-primary)}
+.brand-border{border-color:var(--brand-primary)}
+.brand-bg{background-color:var(--brand-primary)}
+.brand-grad{background-image:linear-gradient(135deg,var(--brand-primary),var(--brand-secondary))}
+.link-primary{color:var(--brand-primary)}
+.link-primary:hover{color:var(--brand-secondary)}
+.btn-primary{background-image:linear-gradient(135deg,var(--brand-primary),var(--brand-secondary)); color:#fff}
+.btn-primary:hover{filter:brightness(0.95)}
+.btn-outline{border:1px solid var(--brand-primary); color:var(--brand-primary)}
+.btn-outline:hover{background:rgba(11,93,170,0.06)}
+html{scroll-behavior:smooth}
+a:focus,button:focus,input:focus,select:focus,textarea:focus{outline:2px solid var(--brand-secondary);outline-offset:2px}
