@@ -1,9 +1,16 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+/*
 export default defineConfig({
   plugins: [react()],
   base: '/waypoint-site/',   // must match repo name exactly (case-sensitive)
   build: { outDir: 'docs' }  // GitHub Pages serves /docs on main
+})*/
+
+export default defineConfig({
+  plugins: [react()],
+  base: '/',            // custom domain uses '/'
+  build: { outDir: 'docs' }
 })
 
